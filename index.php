@@ -22,7 +22,7 @@ include('functions.php');
 			<ul>
 				<li style="font-size: 30px; font-weight: bold;">Project Board</li>
 				<li style="float: right;"><small>
-                  <i style="color: #888;"><?php if (isset($_SESSION['success'])) : ?>
+                  <i style="color: #102E37;"><?php if (isset($_SESSION['success'])) : ?>
                             <?php 
                               echo $_SESSION['success']; 
                               unset($_SESSION['success']);
@@ -32,8 +32,8 @@ include('functions.php');
                    <?php  if (isset($_SESSION['user'])) : ?>
                       <strong><?php echo $_SESSION['user']['name']; ?></strong>
                       <small>
-                        <i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
-                        | <a href="index.php?logout='1'" style="color: white;"> <i class='bx bx-power-off' ></i>Logout</a>
+                        <i  style="color: #102E37;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+                        | <a href="index.php?logout='1'" style="color: #102E37;"> <i class='bx bx-power-off' ></i>Logout</a>
                       </small>
                     <?php endif ?></li>
 			</ul>

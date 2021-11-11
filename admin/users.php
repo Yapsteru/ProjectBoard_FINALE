@@ -250,7 +250,7 @@ function get_products_data(){
       },
       {
         "mRender": function(data,type,row){
-            return "<div class='dropdown'> <button class='dropbtn'>Action</button><div class='dropdown-content'><a onclick='selected_id("+JSON.stringify(row)+")'>Edit User</a><a onclick='delete_file("+JSON.stringify(row)+")'>Delete</a></div></div>";
+            return "<div class='dropdown'> <button class='dropbtn'>Action<i class='bx bx-down-arrow' ></i></button><div class='dropdown-content'><a onclick='selected_id("+JSON.stringify(row)+")'>Edit User</a><a onclick='delete_file("+JSON.stringify(row)+")'>Delete</a></div></div>";
         }
       },
       ]

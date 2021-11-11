@@ -14,12 +14,12 @@
 }
 
 html {
-  font-family: "Lucida Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .header {
-  background-color: #003366;
-  color: #ffffff;
+  background-color: #FCD271;
+  color: #102E37;
   padding: 20px;
 }
 
@@ -33,7 +33,6 @@ html {
 }
 
 .navbar li a{
-  color: white;
   text-decoration: none;
   padding: 12px 14px;
 }
@@ -44,7 +43,7 @@ html {
 
 .sidebar {
   height: 640px;
-  background-color: #261C2C;
+  background-color: #102E37;
 }
 
 .sidebar ul {
@@ -60,15 +59,17 @@ html {
   padding: 8px 16px;
   text-decoration: none;
   margin-bottom: 7px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(252,210,113,1), 0 1px 2px rgba(252,210,113,1);
+  color: #F78D3F;
 }
 
 .sidebar li.active {
-  background-color: #eee;
+  background-color: #FCD271;
 }
 
 .sidebar li a:hover{
- background-color: #eee;
+ background-color: #FCD271;
+ color: #102E37;
 }
 
 /* For mobile phones: */

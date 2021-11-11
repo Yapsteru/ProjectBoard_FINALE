@@ -171,7 +171,7 @@ function get_products_data(){
       },
       {
         "mRender": function(data,type,row){
-            return "<div class='dropdown'> <button class='dropbtn'>Action</button><div class='dropdown-content'><a href='index.php?page=documentprofile_details&folder_name="+JSON.stringify(row.folder_name)+"&folder_path="+JSON.stringify(row.folder_path)+"&folder_id="+JSON.stringify(row.folder_id)+"' >Open</a></div></div>";
+            return "<div class='dropdown'> <button class='dropbtn'>Action<i class='bx bx-down-arrow' ></i></button><div class='dropdown-content'><a href='index.php?page=documentprofile_details&folder_name="+JSON.stringify(row.folder_name)+"&folder_path="+JSON.stringify(row.folder_path)+"&folder_id="+JSON.stringify(row.folder_id)+"' >Open</a></div></div>";
         }
       },
       ]

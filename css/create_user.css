@@ -68,8 +68,8 @@
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #003366;
-  color: white;
+  background-color: #102E37;
+  color: #FCD271;
 }
 
 .modal-body {
@@ -100,14 +100,15 @@
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #9933cc;
+  color: #FCD271;
+  background-color: #102E37;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 .first-modal button:hover {
-  background-color: #3f0071;
+  background-color: #F78D3F;
+  color: #102E37;
 }
 
 .second-modal button {
@@ -118,18 +119,19 @@
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #9933cc;
+  color: #FCD271;
+  background-color: #102E37;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 .second-modal button:hover {
-  background-color: #3f0071;
+  background-color: #F78D3F;
+  color: #102E37;
 }
 
 #tbody {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Quicksand, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -150,8 +152,8 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #035397;
-  color: white;
+  background-color: #102E37;
+  color: #FCD271;
   text-align: center;
 }
 
@@ -196,22 +198,24 @@ th {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #9933cc;
+  color: #FCD271;
+  background-color: #102E37;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 .form-body button:hover {
-  background-color: #3f0071;
+  background-color: #F78D3f;
+  color: #102E37;
 }
 
 .dropbtn {
-  background-color: #9933cc;
-  color: white;
+  background-color: #102E37;
+  color: #FCD271;
   padding: 10px;
   font-size: 12px;
   border: none;
+  border-radius: 25px;
 }
 
 .dropdown {
@@ -236,9 +240,9 @@ th {
 }
 
 .dropdown-content a button {
-  background-color: #003366;
+  background-color: #102E37;
   border: none;
-  color: white;
+  color: #FCD271;
   padding: 10px 14px;
   text-align: center;
   text-decoration: none;
@@ -247,7 +251,8 @@ th {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #F78D3F;
+  color: #102E37;
 }
 
 .dropdown:hover .dropdown-content {
@@ -255,7 +260,8 @@ th {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #003366;
+  background-color: #F78D3f;
+  color: #102E37;
 }
 
 .form-body #user_group {

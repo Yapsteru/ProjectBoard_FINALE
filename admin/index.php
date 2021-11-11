@@ -28,7 +28,7 @@ include('../functions.php');
 			<ul>
 				<li style="font-size: 30px; font-weight: bold;">Project Board</li>
 				<li style="float: right;"><small>
-                  <i style="color: #888;"><?php if (isset($_SESSION['success'])) : ?>
+                  <i style="color: red;"><?php if (isset($_SESSION['success'])) : ?>
                             <?php 
                               echo $_SESSION['success']; 
                               unset($_SESSION['success']);
@@ -38,8 +38,8 @@ include('../functions.php');
                    <?php  if (isset($_SESSION['user'])) : ?>
                       <strong><?php echo $_SESSION['user']['name']; ?></strong>
                       <small>
-                        <i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
-                        | <a href="../index.php?logout='1'" style="color: white;"> <i class='bx bx-power-off' ></i>Logout</a>
+                        <i  style="color: red;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+                        | <a href="../index.php?logout='1'" style="color: #102E37;"> <i class='bx bx-power-off' ></i>Logout</a>
                       </small>
                     <?php endif ?></li>
 			</ul>
@@ -51,12 +51,12 @@ include('../functions.php');
 			<ul>
 		      <li <?php if($load == 'share') {echo 'class="active"';} ?>><a href="index.php?page=share"><i class='bx bx-share-alt'></i>Shared Files</a></li>
 		      <li <?php if($load == 'files') {echo 'class="active"';} ?>><a href="index.php?page=files"><i class='bx bx-file-blank'></i>Files</a></li>
-			  <li <?php if($load == 'documentprofile') {echo 'class="active"';} ?>><a href="index.php?page=documentprofile"><i class='bx bx-file-blank'></i>Document Profiles</a></li>
+			  <li <?php if($load == 'documentprofile') {echo 'class="active"';} ?>><a href="index.php?page=documentprofile"><i class='bx bx-folder'></i>Document Profiles</a></li>
 			 <?php if($_SESSION['user_type']=="admin"){
-?><li <?php if($load == 'users') {echo 'class="active"';} ?>><a href="index.php?page=users"><i class='bx bx-people'></i>Users</a></li><?php
+?><li <?php if($load == 'users') {echo 'class="active"';} ?>><a href="index.php?page=users"><i class='bx bx-user'></i>Users</a></li><?php
 			  }?>
 	 <?php if($_SESSION['user_type']=="admin"){
-?><li <?php if($load == 'groups') {echo 'class="active"';} ?>><a href="index.php?page=groups"><i class='bx bx-people'></i>Groups</a></li><?php
+?><li <?php if($load == 'groups') {echo 'class="active"';} ?>><a href="index.php?page=groups"><i class='bx bx-group'></i>Groups</a></li><?php
 			  }?>
 		    </ul>
 		</div>
