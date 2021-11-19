@@ -1,8 +1,9 @@
 
 <?php
+$user_id = $_POST['user_id'];
 
 $db = mysqli_connect('localhost', 'root', '', 'db_fms');
-$sql = "SELECT * FROM files";
+$sql = "SELECT * FROM files where user_id = '$user_id' and folder_id ='0'";
 $q = mysqli_query($db,$sql) or die (mysqli_error($conn));
 
     $response_array['data'] = array();

@@ -51,7 +51,7 @@ include('../functions.php');
 			<ul>
 		      <li <?php if($load == 'share') {echo 'class="active"';} ?>><a href="index.php?page=share"><i class='bx bx-share-alt'></i>Shared Files</a></li>
 		      <li <?php if($load == 'files') {echo 'class="active"';} ?>><a href="index.php?page=files"><i class='bx bx-file-blank'></i>Files</a></li>
-			  <li <?php if($load == 'documentprofile') {echo 'class="active"';} ?>><a href="index.php?page=documentprofile"><i class='bx bx-folder'></i>Document Profiles</a></li>
+			  <li <?php if($load == 'documentprofile') {echo 'class="active"';} ?>><a href="index.php?page=documentprofile"><i class='bx bx-file-blank'></i>Document Profiles</a></li>
 			 <?php if($_SESSION['user_type']=="admin"){
 ?><li <?php if($load == 'users') {echo 'class="active"';} ?>><a href="index.php?page=users"><i class='bx bx-user'></i>Users</a></li><?php
 			  }?>

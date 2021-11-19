@@ -15,6 +15,7 @@ $db = mysqli_connect('localhost', 'root', '', 'db_fms');
     $details = mysqli_fetch_assoc($results);
     if ($my_counter == 1) { // user found
         $response["user_id"] =$details['user_id'];
+        $response["group_id"] =$details['group_id'];
         $response["status"] =1;
 	array_push($response_array['data'], $response);
     }else {
